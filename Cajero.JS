@@ -51,3 +51,6 @@ function verificarCredenciales() {
         return false;
     }
 }
+
+inputUsuarioIngresado.value = "";
+inputContrasenaIngresada.value = "";

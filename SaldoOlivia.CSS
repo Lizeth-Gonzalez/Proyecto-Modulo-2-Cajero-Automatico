@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    background:#006F57;
+}
+.Saldo{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: #FAF8F8;
+    padding-top: 15px;
+}
