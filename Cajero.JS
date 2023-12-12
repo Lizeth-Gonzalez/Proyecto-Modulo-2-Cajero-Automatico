@@ -6,7 +6,7 @@ let Cliente = [
 
 function Usuario1() {
     let input = document.getElementById("Usuario1");
-    return input.value.trim(); // Eliminar espacios en blanco al inicio y al final
+        return input.value.trim();
 }
 
 function Contrasena1() {
@@ -14,22 +14,40 @@ function Contrasena1() {
     return input.value.trim();
 }
 
-function verificar() {
+function verificarCredenciales() {
     let usuarioIngresado = Usuario1();
     let contrasenaIngresada = Contrasena1();
 
     if (usuarioIngresado === '' || contrasenaIngresada === '') {
         alert("Por favor, complete ambos campos.");
-        return;
+        return false;
     }
 
-    let credencialesCorrectas = Cliente.some(function(cliente) {
+    let usuarioEncontrado = Cliente.find(function(cliente) {
         return cliente.Usuario === usuarioIngresado && cliente.Contrasena === contrasenaIngresada;
     });
 
-    if (credencialesCorrectas) {
-    window.location.href= "Opciones.HTML";
+    if (usuarioEncontrado) {
+        alert("Usuario y contraseña correctos");
+
+        switch (usuarioEncontrado.Usuario) {
+            case 'Olivia':
+                window.location.href = "OpcionesOlivia.html";
+                break;
+            case 'Rodrigo':
+                window.location.href = "OpcionesRodrigo.html";
+                break;
+            case 'Carmen':
+                window.location.href = "OpcionesCarmen.html";
+                break;
+            default:
+                alert("Usuario no reconocido");
+                break;
+        }
+
+        return false; // Evitar que el formulario se envíe normalmente
     } else {
-    alert("Usuario o contraseña incorrectos");
+        alert("Usuario o contraseña incorrectos");
+        return false;
     }
 }
