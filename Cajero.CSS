@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    background:#006F57;
+}
+
+.Boton{
+    position: relative;
+}
+
+.coronadenavidad{
+    display: block;
+    margin: 0 auto;    
+    width: 28%;
+    height: 28%;
+    padding-top: 5px;
+}
+
+.Rojo{
+    position: absolute;
+    top: 53%;
+    left: 47.2%;
+    width: 69px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #CD1624;
+    filter: brightness(1);
+    transition: filter 0.1s;
+    border: none;
+}
+
+.Boton:hover .Rojo {
+    opacity: 1;
+}
+
+.Rojo:hover{
+    filter: brightness(1.5);
+}
+
+#Principal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Pricipal:hover{
+    cursor: default;
+}
+
+.NomUsu{
+    padding-top: 0px;
+    padding-bottom:10px ;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FAF8F8;
+    font-size: medium;
+}
+
+.NomUsu:hover{
+    cursor: default;
+}
+
+.ConUsu{
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;  
+    background-color: #23856D;
+    color: #FAF8F8;
+    border: 3px solid #FAF8F8;
+}
+
+.ConUsu:hover{
+background-color: #FAF8F8;
+}
+
+.ConUsu::placeholder{
+    color: #FAF8F8;
+}
+
+.ConUsu:hover::placeholder{
+    color:#006F57;
+}
+
+.ConUsu:focus{
+    border-color: #FAF8F8;
+}
+
+.ConUsu:hover:focus{
+    color: #006F57;
+}
+
+#banco{
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    color: #FAF8F8;
+    font-size: smaller;
+}
+
+.Aceptar{
+    border: 2px solid #FAF8F8;
+    color: #FAF8F8;
+    background-color: #23856D;
+    width: 15%;
+    height: 30px;
+}
+
+#Aceptar{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.Aceptar:hover{
+    cursor: pointer;
+    background-color: #FAF8F8;
+    color: #006F57;
+}
