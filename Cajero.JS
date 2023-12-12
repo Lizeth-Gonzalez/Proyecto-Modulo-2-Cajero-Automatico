@@ -32,13 +32,13 @@ function verificarCredenciales() {
 
         switch (usuarioEncontrado.Usuario) {
             case 'Olivia':
-                window.location.href = "OpcionesOlivia.html";
+                window.location.href = "./Opciones/OpcionesOlivia.HTML";
                 break;
             case 'Rodrigo':
-                window.location.href = "OpcionesRodrigo.html";
+                window.location.href = "./Opciones/OpcionesRodrigo.HTML";
                 break;
             case 'Carmen':
-                window.location.href = "OpcionesCarmen.html";
+                window.location.href = "./Opciones/OpcionesCarmen.HTML";
                 break;
             default:
                 alert("Usuario no reconocido");
