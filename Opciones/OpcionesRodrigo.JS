@@ -2,10 +2,10 @@ function Saldo(){
     location= "./Saldo/SaldoRodrigo.HTML"
 }
 
-function IngresarMonto(){
+function IngresarRodrigo(){
     location= "./Ingresar/IngresarRodrigo.HTML"
 }
 
-function RetirarMonto(){
+function RetirarRodrigo(){
     location= "./Retirar/RetirarRodrigo.HTML"
 }

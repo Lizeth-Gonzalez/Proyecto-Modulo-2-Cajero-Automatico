@@ -98,22 +98,22 @@ background-color: #FAF8F8;
     font-size: smaller;
 }
 
-.Aceptar{
+#Aceptar{
     border: 2px solid #FAF8F8;
     color: #FAF8F8;
     background-color: #23856D;
-    width: 15%;
-    height: 30px;
+    font-size: 30px;
+    width: 20%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#Aceptar{
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-}
-
-.Aceptar:hover{
+#Aceptar:hover{
     cursor: pointer;
     background-color: #FAF8F8;
     color: #006F57;
+}
+
+.Botonn{
+    display: flex;
+    justify-content: center;
 }
