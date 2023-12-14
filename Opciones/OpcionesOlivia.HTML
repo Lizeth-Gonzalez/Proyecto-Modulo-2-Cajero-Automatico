@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opciones</title>
+    <title>Cuenta Olivia</title>
     <link rel="stylesheet" href="Opciones.CSS">
 </head>
 <body>
-    <Main>
-        <h1>Bienvenido, como podemos ayudarte?</h1>
-        <div class="B">
-            <div class="D"><img src="./Imagenes/campana-de-navidad.png" alt="arco" class="C">
-                <button class="A" onclick="Saldo()">Consultar mi saldo</button>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="D"><img src="./Imagenes/campana-de-navidad.png" alt="arco" class="C">
-                <button class="A" onclick="IngresarMonto()">Ingresar monto</button>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="D"><img src="./Imagenes/campana-de-navidad.png" alt="arco" class="C">
-                <button class="A" onclick="RetirarMonto()">Retirar monto</button>
-            </div>
+    
+        <h1 class="Saldo">Saldo de Olivia</h1>
+
+        <h2>Saldo Actual: $<span id="saldo">638</span></h2>
+
+        <h1 class="retirar">Por favor, Ingrese monto a retirar o a ingresar</h1>
+
+        <div class="O"><input class="T" type="number" id="monto" placeholder="Retira o ingresar monto">
+
+        <div class="ton"><button onclick="retirarMonto()"  class="In">Retirar</button></div>
+        <div class="bo"><button onclick="ingresarMonto()"  class="In">Ingresar</button></div>
+
         </div>
-    </Main>
-    <script src="OpcionesOlivia.JS"></script>
+    <script src="Olivia.JS"></script>
 </body>
 </html>

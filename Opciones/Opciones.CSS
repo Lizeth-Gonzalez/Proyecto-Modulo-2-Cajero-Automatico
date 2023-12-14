@@ -4,44 +4,60 @@
     background-color: #006F57;
 }
 
-h1{
-    padding-top: 20px;
-    padding-left: 50px;
-    font-size: 60px;
-    color: #FAF8F8;
-}
-
-.B{
-    padding-top: 50px;
-    padding-left: 30%;
-}
-
-.A{
+.Saldo{
     display: flex;
     justify-content: center;
-    width: 90%;
-    height: 30%;
-    font-size: 45px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #CD1624;
+    font-size: 100px;
     color: #FAF8F8;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
+    padding-top: 15px;
+}
+
+.T{
+    color: #FAF8F8;
+    background-color: #23856D;
     border: 3px solid #FAF8F8;
+    width: 35%;
 }
 
-.A:hover{
+.T::placeholder{
+    color: #FAF8F8;
+}
+
+.O{
+    display: flex;
+    justify-content: baseline;
+    padding-top: 30px;
+    padding-left: 140px;
+}
+
+.retirar{
+    display: flex;
+    justify-content: center;
+    color: #FAF8F8;
+    padding-top: 40px;
+    font-size: 60px;
+}
+
+.In{
+    color: #FAF8F8;
+    width: 70px;
+    height: 35px;
+    border: solid 2px #FAF8F8;
+}
+
+.In:hover{
+    background-color: #FAF8F8;
     cursor: pointer;
-    background-color: #BB010B;
+    color: #006F57;
 }
 
-.C{
-    width: 110px;
-    height: 115px;
-    padding-right: 70%;
-    left: 20%;
-    position:absolute;
+.ton{
+    padding-left: 2%;
+
+}
+
+.bo{
+    padding-left: 2%;
 }
 
 
